@@ -1,8 +1,9 @@
+using EFSM.Event;
 using UnityEngine;
 
-namespace EFSM
+namespace EFSM.Example
 {
-    public class TestPlayer : EFSMController
+    public class TestPlayer : EFSMEventController
     {
 
     }

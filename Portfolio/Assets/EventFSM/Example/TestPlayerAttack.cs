@@ -1,19 +1,10 @@
+using EFSM.FSM;
 using UnityEngine;
 
-namespace EFSM
+namespace EFSM.Example
 {
-    public class TestPlayerAttack : MonoBehaviour
+    public class TestPlayerAttack : EFSMStateMachine
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-        
-        }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
     }
 }
