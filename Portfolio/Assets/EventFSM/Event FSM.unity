@@ -476,10 +476,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c35877c417ecab4babf714596b7d458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventTable: []
-  references:
-    version: 2
-    RefIds: []
+  eventTable:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  input: {fileID: 11400000, guid: 62fa72fc7d0dde04981105e347196eab, type: 2}
 --- !u!114 &651446351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ee668e5894e2d47b6b01f981400d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  states: []
+  initState: {fileID: 0}
 --- !u!114 &651446352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58b4e154ca2f81f4688a18be7c75a16e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  states: []
+  initState: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2094,7 +2099,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 16d68d326d43b274298dfe95a782db7c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -2115,6 +2120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfddb16cf39a6a24bb1da1c749b3db87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  states: []
+  initState: {fileID: 0}
 --- !u!4 &5316305649814893489
 Transform:
   m_ObjectHideFlags: 0

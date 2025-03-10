@@ -1,3 +1,4 @@
+using EFSM.FSM;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,11 +6,11 @@ namespace EFSM.Event
 {
     public class EFSMEventController : MonoBehaviour
     {
-        [SerializeReference] public List<IEFSMEvent> eventTable = new();
+        public List<EFSMEvent> eventTable = new();
 
-        public void Publish<T>() where T : IEFSMEvent
+        public void Publish<T>() where T : EFSMEvent
         {
-            foreach (IEFSMEvent evt in eventTable)
+            foreach (EFSMEvent evt in eventTable)
             {
                 if (evt is T)
                 {
@@ -18,9 +19,9 @@ namespace EFSM.Event
             }
         }
 
-        public void Subscribe<T>(IEFSMEventHandler state) where T : IEFSMEvent
+        public void Subscribe<T>(EFSMState state) where T : EFSMEvent
         {
-            foreach (IEFSMEvent evt in eventTable)
+            foreach (EFSMEvent evt in eventTable)
             {
                 if (evt is T)
                 {
@@ -29,9 +30,9 @@ namespace EFSM.Event
             }
         }
 
-        public void Unsubscribe<T>(IEFSMEventHandler state) where T : IEFSMEvent
+        public void Unsubscribe<T>(EFSMState state) where T : EFSMEvent
         {
-            foreach (IEFSMEvent evt in eventTable)
+            foreach (EFSMEvent evt in eventTable)
             {
                 if (evt is T)
                 {

@@ -1,11 +1,12 @@
+using EFSM.FSM;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace EFSM.Event
 {
-    public class EFSMEvent : ScriptableObject, IEFSMEvent
+    public class EFSMEvent : ScriptableObject
     {
-        [SerializeReference] public List<IEFSMEventHandler> subscribers;
+        public List<EFSMState> subscribers;
 
         public virtual void Publish()
         {
@@ -15,12 +16,12 @@ namespace EFSM.Event
             }
         }
 
-        public virtual void Subscribe(IEFSMEventHandler handler)
+        public virtual void Subscribe(EFSMState handler)
         {
             subscribers.Add(handler);
         }
 
-        public virtual void Unsubscribe(IEFSMEventHandler handler)
+        public virtual void Unsubscribe(EFSMState handler)
         {
             subscribers.Remove(handler);
         }
