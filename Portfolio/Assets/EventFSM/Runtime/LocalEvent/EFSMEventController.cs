@@ -19,6 +19,14 @@ namespace EFSM.Event
             }
         }
 
+        public List<T> GetEvent<T>(List<T> list) where T : EFSMEvent
+        {
+            for (int i = 0; i < eventTable.Count; i++)
+                if (eventTable[i] is T target)
+                    list.Add(target);
+            return list;
+        }
+
         public void Subscribe<T>(EFSMState state) where T : EFSMEvent
         {
             foreach (EFSMEvent evt in eventTable)

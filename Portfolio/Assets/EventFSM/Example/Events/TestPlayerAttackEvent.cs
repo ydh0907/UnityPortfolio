@@ -1,19 +1,10 @@
+using EFSM.Event;
 using UnityEngine;
 
-namespace EFSM
+namespace EFSM.Example
 {
-    public class TestPlayerAttackEvent : MonoBehaviour
+    [CreateAssetMenu(menuName = "SO/EFSM/Event/TestPlayerAttackEvent")]
+    public class TestPlayerAttackEvent : EFSMEvent
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
     }
 }

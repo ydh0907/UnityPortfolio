@@ -477,9 +477,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventTable:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: cb99d29ed4a00fc4aa394b95a23cfe3b, type: 2}
+  - {fileID: 11400000, guid: 9d0a4a94421434d4fa487e8a34569829, type: 2}
+  - {fileID: 11400000, guid: 931263c3b6191634f8d692dcc9f6ec30, type: 2}
   input: {fileID: 11400000, guid: 62fa72fc7d0dde04981105e347196eab, type: 2}
 --- !u!114 &651446351
 MonoBehaviour:
@@ -493,8 +493,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ee668e5894e2d47b6b01f981400d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  states: []
-  initState: {fileID: 0}
+  states:
+  - {fileID: 11400000, guid: f3b4a44f0544bc240a27bac38c966c30, type: 2}
+  - {fileID: 11400000, guid: 49005cbb5d653414791a42d46969e017, type: 2}
+  initState: {fileID: 11400000, guid: f3b4a44f0544bc240a27bac38c966c30, type: 2}
 --- !u!114 &651446352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,8 +509,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58b4e154ca2f81f4688a18be7c75a16e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  states: []
-  initState: {fileID: 0}
+  states:
+  - {fileID: 11400000, guid: db1a837247844dc4c8a7a656101f4cc6, type: 2}
+  - {fileID: 11400000, guid: f3b4a44f0544bc240a27bac38c966c30, type: 2}
+  initState: {fileID: 11400000, guid: db1a837247844dc4c8a7a656101f4cc6, type: 2}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +984,7 @@ GameObject:
   - component: {fileID: 2166335148432705378}
   - component: {fileID: 5255826669955685656}
   - component: {fileID: 5255826669955685657}
+  - component: {fileID: 5255826669955685658}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Untagged
@@ -2120,8 +2125,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfddb16cf39a6a24bb1da1c749b3db87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  states: []
-  initState: {fileID: 0}
+  states:
+  - {fileID: 11400000, guid: b049a4add87dd7e4aadc049341026692, type: 2}
+  - {fileID: 11400000, guid: 878332e38ae2a854aa39a41fa0cff9f8, type: 2}
+  - {fileID: 11400000, guid: 5e4310ef083e35b4caeb26ee32ee6bb5, type: 2}
+  initState: {fileID: 11400000, guid: b049a4add87dd7e4aadc049341026692, type: 2}
+--- !u!114 &5255826669955685658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538980903688478168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec89a3c261b16d47bdcc07acb8ee900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventTable:
+  - {fileID: 11400000, guid: e7934773b0e791143862720d2834e2d9, type: 2}
 --- !u!4 &5316305649814893489
 Transform:
   m_ObjectHideFlags: 0

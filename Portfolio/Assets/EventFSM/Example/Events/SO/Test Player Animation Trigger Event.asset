@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f0691745756c9479bdb3610b2f4e5d, type: 3}
+  m_Name: Test Player Animation Trigger Event
+  m_EditorClassIdentifier: 
+  subscribers:
+  - {fileID: 11400000, guid: 878332e38ae2a854aa39a41fa0cff9f8, type: 2}
+  - {fileID: 11400000, guid: 49005cbb5d653414791a42d46969e017, type: 2}
+  trigger: 0

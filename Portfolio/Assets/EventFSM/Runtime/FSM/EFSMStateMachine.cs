@@ -9,6 +9,7 @@ namespace EFSM.FSM
         public EFSMState initState;
 
         private EFSMState currentState;
+        public EFSMState CurrentState => currentState;
 
         private void Awake()
         {
@@ -29,6 +30,8 @@ namespace EFSM.FSM
             currentState = state;
             currentState?.EnterState();
         }
+
+        public void TryInterrupt()
 
         public void Stop()
         {
